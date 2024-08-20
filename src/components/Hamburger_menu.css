@@ -1,0 +1,53 @@
+.bg-hamburger{
+    position: absolute;
+    right: 0px;
+    top: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    
+}
+.bg-burger-bars{
+    display: flex;
+    width: 3rem;
+    margin-bottom: 7px;
+    height: 3px;
+    background-color: white;
+}
+
+.bg-burger-menu-item{
+top: 4.6rem;
+    display: grid;
+    padding: 4rem;
+    height: 100rem;
+    background: #373535;
+    position: absolute;
+    left: -6.2rem;
+    border-radius: .5rem;
+}
+
+.bubble {
+    position: absolute;
+    right: -50px; /* Start from off-screen to the right */
+    bottom: 50%;
+    width: 20px;
+    height: 20px;
+   
+    border-radius: 50%;
+    
+    animation: moveBubble 1s ease-out forwards;
+}
+
+@keyframes moveBubble {
+    0% {
+        transform: translateX(0) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50px) scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(-50px) scale(1);
+        opacity: 1;
+    }
+}

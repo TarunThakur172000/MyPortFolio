@@ -1,0 +1,33 @@
+.projectssec{
+  cursor: pointer;
+  overflow: hidden;
+}
+.projectssec:hover img{
+ width: 21rem;
+ height: 12rem;
+ 
+}
+
+.projectssec img{
+width:21rem;
+height:12rem
+}
+.projectssec a {
+  position: relative; /* Required for positioning the ::before pseudo-element */
+  text-decoration: none; /* Remove default underline */
+}
+
+.projectssec a::before {
+  content: ''; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: white; 
+  transition: width 0.3s ease; 
+}
+
+.projectssec a:hover::before {
+  width: 100%; 
+}
